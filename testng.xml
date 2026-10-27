@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Automation Practice Test Suite" parallel="methods" thread-count="4" verbose="1">
+  <test name="UI automation test">
+  
+  <parameter name = "browser" value = "${brpwser}"/>
+  <parameter name = "isLambdaTest" value = "${isLambdaTest}"/>  <!-- want to run test in local machine/>-->
+  <parameter name = "isHeadless" value = "${isHeadless}"/> <!-- want to run test in headless mode >-->
+  
+    <classes>
+       <class name="com.ui.test.LoginTest3"/>
+    </classes>
+  </test>
+
+
+</suite>
